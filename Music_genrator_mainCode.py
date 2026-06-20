@@ -10,12 +10,7 @@ if gpus:
     for gpu in gpus:
         tf.config.experimental.set_memory_growth(gpu, True)
 
-files = [
-    "data_set/1.mid","data_set/2.mid","data_set/3.mid","data_set/4.mid","data_set/5.mid",
-    "data_set/6.mid","data_set/7.mid","data_set/8.mid","data_set/9.mid","data_set/10.mid",
-    "data_set/11.mid","data_set/12.mid","data_set/13.mid","data_set/14.mid","data_set/15.mid",
-    "data_set/16.mid","data_set/17.mid","data_set/18.mid","data_set/19.mid","data_set/20.mid"
-]
+files = ["your MIDI files here "]
 
 def sample_with_temperature(preds, temperature=1.0):
     preds = np.asarray(preds).astype('float64')
